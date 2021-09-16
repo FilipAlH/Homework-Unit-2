@@ -1,18 +1,20 @@
 
 body {
+    background-color: rgb(112, 180, 180);
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
 }
 
 aside {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.432);
     width: 30%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-self: center;
+    align-items: center;
+    justify-content: flex-start;
     margin: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
 }
 
 aside h1 {
@@ -22,13 +24,15 @@ aside h1 {
 }
 
 aside figure img {
-    width: 100%;
-    align-self: center;
+    display: flex;
+    width: 20vw;
 }
 
-body aside section p {
-    text-align: center;
-    width: 95%;
+body aside section {
+    display: flex;
+    text-align: left;
+    margin: 10px;
+    width: 80%;
 }
 
 .right {
@@ -37,15 +41,13 @@ body aside section p {
     flex-direction: column;
     margin: 40px;
 }
-main {
-    width: 100%;
-    background-color: thistle;
-}
 
 header {
+    position: relative;
+    top: -22px;
     display: flex;
     flex-direction: row;
-    background-color: rgba(238, 130, 238, 0.7);
+    background-color: rgba(212, 64, 19, 0.432);
 }
 
 .contact {
@@ -66,28 +68,38 @@ section ul li {
 .nav {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
     align-self: center;
     position: relative;
 }
 
 details[open] ul {
-    width: 90%;
+    width: 100px;
     display: inline-flex;
     flex-direction: column;
     flex-wrap: wrap;
     padding: 10px;
     position: absolute;
-    right: 0px;
+    right: -10px;
     z-index: 1;
     background-color: grey;
+
+}
+
+details[open] li {
+    text-align: left;
+    margin-top: 5px;
+}
+
+details[open] a {
+    text-decoration: none;
 }
 
 details {
     color: white;
     width: 30%;
     position: fixed;
-    right: 0;
+    text-align: right;
+    margin-right: 10px;
     top: 0%;
 }
 
@@ -95,4 +107,41 @@ a:visited, a:link {
     color: white;
 }
 
+main section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: rgba(255, 255, 255, 0.432);
+}
 
+main figure{
+    margin-top: 30px;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main section figure img {
+    width: 20vw;
+}
+
+main section figure img:hover {
+    transition:  all 0.3s ease-in-out;
+    box-shadow: inset 0px 0px 8px rgba(0, 0, 0, 0.473), 0 0 15px rgba(0, 0, 0, 0.9);
+}
+
+#project1 {
+    width: 47.5vw;
+}
+
+
+@media screen and (max-width: 1300px) {
+    main section figure img {
+        width: 40vw;
+    }
+    .right {
+        margin-left: 0.5vw;
+        margin-right: 0.5vw;
+    }
+}
