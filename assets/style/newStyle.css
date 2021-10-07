@@ -1,0 +1,68 @@
+.col-md-4 {
+    width: 25%;
+    position: relative;
+    left: -20px;
+    height: 125%;
+    align-content: center;
+}
+
+.d-flex {
+    align-content: center;
+}
+
+.roundedMe {
+    border-radius: 10px;
+}
+
+.gradient {
+    background-image: linear-gradient(to bottom right, white, rgb(187, 187, 255));
+}
+
+.colorP {
+    background-color: rgb(195, 195, 255);
+}
+
+.colorW {
+    background-color: rgb(220, 220, 255);
+    position: relative;
+    bottom: -10vh;
+}
+
+#links {
+    position: relative;
+    bottom: -35vh; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#btn {
+    width: 18%;
+    color: white;
+    background-color: rgb(163, 148, 218);
+    border: rgb(146, 218, 187);
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+}
+
+#btn img {
+    max-width: 24px;
+    margin-right: 10px;
+}
+.size {
+    height: 93.8vh;
+}
+
+.btn-group {
+    display: flex;
+    justify-content: space-around;
+}
+
+.reference {
+    position: relative;
+    bottom: -48vh;
+    font-size: 6px;
+}
