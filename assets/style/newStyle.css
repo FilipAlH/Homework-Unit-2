@@ -66,3 +66,19 @@
     bottom: -48vh;
     font-size: 6px;
 }
+
+.projects {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+}
+
+.projects img {
+    max-width: 40vw;
+}
+
+#project1 img {
+    max-width: 60vw;
+}
