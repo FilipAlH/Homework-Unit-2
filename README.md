@@ -3,5 +3,5 @@ This week I will be building the framework for a portfolio website with the inte
 
 website: https://filipalh.github.io/Homework-Unit-2/
 
-![website1](https://user-images.githubusercontent.com/89649055/133539540-0c261487-bfad-4f89-998e-79b47d1bca44.png)
-![website 2](https://user-images.githubusercontent.com/89649055/133539555-e1edffd5-0729-41df-b04a-d9933ceee195.png)
+![newwebsite](https://user-images.githubusercontent.com/89649055/136720573-c1144453-1276-424e-9b25-5a7b70b1e35c.png)
+
