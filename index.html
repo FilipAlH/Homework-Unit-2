@@ -18,8 +18,6 @@
                   <li><button class="nav-link"><a href="#project1">CSS CheatSheet</a></button></li>
                   <li><button class="nav-link"><a href="#project2">Weather Tracker</a></button></li>
                   <li><button class="nav-link"><a href="#project5">Project 5</a></button></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Separated link</a></li>
                 </ul>
               </li>
           </ul>
@@ -27,11 +25,11 @@
             <div class="col tab-pane fade show active" id="about" role="tabpanel" aria-labelledby="home-tab">
                 <div class="d-flex justify-content-center p-3 row">
                     <div class="card mb-3 mt-5 d-flex shadow colorW" style="max-width: 90%">
-                        <div class="row g-0 d-flex">
-                            <div class="col-md-4 d-flex">
+                        <div class="row g-0 d-flex" id="profile-card">
+                            <div class="col-md-4 d-flex" id="profileImage">
                                 <img src="./assets/images/figure.jpg" class="img-fluid roundedMe shadow" alt="Filip">
                             </div>
-                            <div class="col-md-8 d-flex">
+                            <div class="col-md-8 d-flex" id="profile-text">
                                 <div class="card-body align-self-center">
                                     <h5 class="card-title" id="About">About me</h5>
                                     <p class="card-text">Hey, Thats me! I was once a student studying chemistry who has since
@@ -47,9 +45,9 @@
                     </div>
 
                     <div class="row" id="links">
-                            <button type="button" class="btn btn-outline-primary col-3 shadow" id="btn" onclick="window.open('https://filip.a.11@hotmail.com', '_blank')"><img src="./assets/images/email.png" class="" alt="email"> Contact me!</button>
-                            <button type="button" class="btn btn-outline-primary col-3 shadow" id="btn" onclick="window.open('https://github.com/FilipAlH', '_blank')"><img src="./assets/images/github.png" class="" alt="github"> Check my work out on github!</button>
-                            <button type="button" class="btn btn-outline-primary col-3 shadow" id="btn" onclick="window.open('https://www.linkedin.com/in/filip-al-32b023200/', '_blank')"><img src="./assets/images/linkedin.png" class="" alt="linkedin">LinkedIn</button>
+                            <button type="button" class="btn btn-outline-primary col-3 shadow" id="btn" onclick="window.open('https://filip.a.11@hotmail.com', '_blank')"><img src="./assets/images/email.png" class="" alt="email"> <span>Contact me!</span></button>
+                            <button type="button" class="btn btn-outline-primary col-3 shadow" id="btn" onclick="window.open('https://github.com/FilipAlH', '_blank')"><img src="./assets/images/github.png" class="" alt="github"> <span>Check me out on github!</span></button>
+                            <button type="button" class="btn btn-outline-primary col-3 shadow" id="btn" onclick="window.open('https://www.linkedin.com/in/filip-al-32b023200/', '_blank')"><img src="./assets/images/linkedin.png" class="" alt="linkedin"><span>LinkedIn</span></button>
                     </div>
                     <div class="reference">Icons from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
                 </div>
@@ -60,35 +58,35 @@
                     <section class="col projects">
                         <figure class="row-8 m-4" id="project1">
                             <a href="https://filipalh.github.io/CSS-CheatSheet-Website/" target="_blank"><img src="./assets/images/CSS.png" alt="css-style-cheatsheet"></img></a>
-                            <h2 class="mt-2">
+                            <h2 class="mt-2" id="projectName">
                                 CSS-Style CheatSheet
                             </h2>
                         </figure>
         
                         <figure class="row-3 m-4" id="project2">
                             <a href="https://filipalh.github.io/Weather-Tracker/" target="_blank"><img src="./assets/images/weather-tracker.png" alt="placeholder image"></img></a>
-                            <h3 class="mt-2">
+                            <h3 class="mt-2" id="projectName">
                                 Weather Tracker
                             </h3>
                         </figure>
         
                         <figure class="row-3 m-4" id="project3">
                             <a href="#"><img src="./assets/images/placeholder.jpg" alt="placeholder image"></img></a>
-                            <h3 class="mt-2">
+                            <h3 class="mt-2" id="projectName">
                                 placeholder
                             </h3>
                         </figure>
         
                         <figure class="row-3 m-4" id="project4">
                             <a href="#"><img src="./assets/images/placeholder.jpg" alt="placeholder image"></img></a>
-                            <h3 class="mt-2">
+                            <h3 class="mt-2" id="projectName">
                                 placeholder
                             </h3>
                         </figure>
                         
                         <figure class="row-3 m-4" id="project5">
                             <a href="#"><img src="./assets/images/placeholder.jpg" alt="placeholder image"></img></a>
-                            <h3 class="mt-2">
+                            <h3 class="mt-2" id="projectName">
                                 placeholder
                             </h3>
                         </figure>

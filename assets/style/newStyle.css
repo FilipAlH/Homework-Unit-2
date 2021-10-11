@@ -1,5 +1,5 @@
-.col-md-4 {
-    width: 25%;
+#profileImage {
+    width: auto;
     position: relative;
     left: -20px;
     height: 125%;
@@ -44,8 +44,8 @@
     text-align: center;
     display: flex;
     flex-direction: row;
-    align-content: center;
     justify-content: center;
+    align-items: center;
 }
 
 #btn img {
@@ -62,8 +62,8 @@
 }
 
 .reference {
-    position: relative;
-    bottom: -48vh;
+    position: absolute;
+    bottom: 0vh;
     font-size: 6px;
 }
 
@@ -81,4 +81,80 @@
 
 #project1 img {
     max-width: 60vw;
+}
+
+#projectName {
+    font-size: calc(2.4vw);
+}
+
+@media screen and (max-width: 992px) {
+    #profile-card {
+        margin-top: auto;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    #profileImage {
+        height: auto;
+        width: auto;
+        margin-top: 20px;
+    }
+
+    .card {
+        position: relative;
+        top: -20px;
+    }
+
+    #links {
+        bottom: -10vh;
+    }
+
+    .size {
+        height: 93.8vh;
+    }
+
+    #profile-text {
+        width: 92%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #profile-card {
+        margin-top: auto;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    #profileImage {
+        height: auto;
+        width: auto;
+        margin-top: 20px;
+    }
+
+    .card {
+        position: relative;
+        top: -20px;
+    }
+
+    #links {
+        bottom: -5vh;
+    }
+
+    .size {
+        height: 93.8vh;
+    }
+
+    #profile-text {
+        width: 95%;
+    }
+
+    body section div div div div button span {
+        display: none;
+    }
+
+    .projects img {
+        max-width: 36vw;
+    }
 }
